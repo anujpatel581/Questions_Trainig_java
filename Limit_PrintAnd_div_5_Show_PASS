@@ -1,0 +1,38 @@
+/*enter limit:16
+1
+2
+3
+4
+PASS
+6
+7
+8
+9
+PASS
+11
+12
+13
+14
+PASS
+16
+*/
+
+
+package Questions_Trainig_java;
+import java.util.Scanner;
+public class LimitPrintAnd_div5ShowPASS {
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("enter limit: ");
+        int limit = scanner.nextInt();
+        for(int i=1; i<=limit; i++){
+            if(i%5==0){
+                System.out.println("PASS");
+            }
+            else{
+                System.out.println(i);
+            }
+
+        }
+    }
+}
